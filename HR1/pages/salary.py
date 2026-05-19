@@ -37,7 +37,12 @@ layout = dbc.Container([
         ])), width=12)
     ])
 ])
-
+color_map = {
+    "Exceeds": "#1f77b4",           # Blue
+    "Fully Meets": "#ff7f0e",       # Orange
+    "Needs Improvement": "#2ca02c", # Green
+    "PIP": "#d62728"                # Red
+}
 @callback(
     Output('salary-scatter-plot', 'figure'),
     Input('dept-selector', 'value')
@@ -51,6 +56,7 @@ def update_graph(selected_department):
         x="Tenure_Years", 
         y="Salary", 
         color="PerformanceScore",
+        color_discrete_map=color_map,
         marginal_y="violin",
         marginal_x="box",
         trendline="ols",
