@@ -1,0 +1,6 @@
+dash
+dash_bootstrap_components as dbc
+pandas as pd
+plotly.express as px
+statsmodels
+gunicorn
