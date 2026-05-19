@@ -1,0 +1,29 @@
+/* 1. Custom margin for spacing between rows */
+.custom_margin {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* 2. Style for the Cards to make them look more professional */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1); /* Adds a soft shadow around cards */
+    border-radius: 10px;                   /* Makes card corners rounded */
+    transition: 0.3s;                      /* Smooth effect when interacting */
+}
+
+/* 3. Subtle hover effect when mouse is over a card */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* 4. Adjust the Navbar spacing */
+.navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* 5. Custom font for the whole dashboard */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Very light grey background for better contrast */
+}
